@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoDébâcle - Les Fails du Sport Auto</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Segoe UI', sans-serif;
             background-color: #111;
@@ -12,47 +16,99 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #c62828;
             padding: 20px;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
             font-size: 2em;
             color: white;
         }
+
         nav {
             background-color: #b71c1c;
             display: flex;
             justify-content: center;
             gap: 20px;
             padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
         }
+
         .container {
             padding: 20px;
             max-width: 900px;
             margin: auto;
         }
+
         .story {
             background-color: #222;
             padding: 15px;
             margin-bottom: 20px;
             border-left: 5px solid #f44336;
         }
+
         .story h2 {
             margin-top: 0;
         }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: #aaa;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        /* Formulaire */
+        #form-contribution {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border: 1px solid #444;
+        }
+
+        #form-contribution input,
+        #form-contribution select,
+        #form-contribution textarea,
+        #form-contribution button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: #eee;
+            border: 1px solid #555;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        #form-contribution button {
+            background-color: #c62828;
+            cursor: pointer;
+            border: none;
+        }
+
+        #confirmation {
+            display: none;
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 5px solid #66bb6a;
         }
     </style>
 </head>
@@ -64,29 +120,83 @@
 </header>
 
 <nav>
-    <a href="#">Accueil</a>
-    <a href="#">Histoires</a>
-    <a href="#">Top Fails</a>
-    <a href="#">Contribuer</a>
-    <a href="#">À propos</a>
+    <a href="#accueil">Accueil</a>
+    <a href="#histoires">Histoires</a>
+    <a href="#topfails">Top Fails</a>
+    <a href="#contribuer">Contribuer</a>
+    <a href="#apropos">À propos</a>
 </nav>
 
 <div class="container">
-    <h2>💥 Histoire du moment :</h2>
-    <div class="story">
-        <h2>Quand une voiture de sécurité cause un accident…</h2>
-        <p>Lors du Grand Prix du Japon 2022, Pierre Gasly passe à pleine vitesse... à quelques mètres d'un tracteur de dépannage sur la piste sous la pluie. Une situation absurde et extrêmement dangereuse, qui rappelle tristement l'accident fatal de Jules Bianchi en 2014.</p>
-    </div>
+    <!-- ACCUEIL -->
+    <section id="accueil">
+        <h2>💥 Histoire du moment :</h2>
+        <div class="story">
+            <h2>Quand une voiture de sécurité cause un accident…</h2>
+            <p>Lors du Grand Prix du Japon 2022, Pierre Gasly passe à pleine vitesse... à quelques mètres d'un tracteur de dépannage sur la piste sous la pluie. Une situation absurde et extrêmement dangereuse, qui rappelle tristement l'accident fatal de Jules Bianchi en 2014.</p>
+        </div>
+    </section>
 
-    <div class="story">
-        <h2>La roue mal serrée qui coûte une victoire</h2>
-        <p>En 2021, Valtteri Bottas est victime d’un arrêt au stand de plus de 43 heures. Oui, tu as bien lu. Une roue avant gauche refusait de se dévisser après la course, et il a fallu la découper. Mercedes a tout simplement abandonné la course. 🤯</p>
-    </div>
+    <!-- HISTOIRES -->
+    <section id="histoires">
+        <h2>🧨 Autres histoires incroyables :</h2>
+        <div class="story">
+            <h2>La roue mal serrée qui coûte une victoire</h2>
+            <p>En 2021, Valtteri Bottas est victime d’un arrêt au stand de plus de 43 heures. Oui, tu as bien lu. Une roue avant gauche refusait de se dévisser après la course, et il a fallu la découper. Mercedes a tout simplement abandonné la course. 🤯</p>
+        </div>
+    </section>
+
+    <!-- TOP FAILS -->
+    <section id="topfails">
+        <h2>🏁 Top Fails du Sport Auto</h2>
+        <ul>
+            <li>🔧 Maldonado qui plante sa voiture… en quittant les stands</li>
+            <li>🌧️ Hamilton qui entre au stand sans que son équipe soit prête</li>
+            <li>🔥 Voiture qui prend feu à l’arrivée… alors qu’elle était en tête</li>
+            <li>⚙️ Freins montés à l’envers chez Haas (2018)</li>
+        </ul>
+    </section>
+
+    <!-- CONTRIBUER -->
+    <section id="contribuer">
+        <h2>📝 Contribue avec ton histoire !</h2>
+        <div id="form-contribution">
+            <form id="contributionForm">
+                <input type="text" name="nom" placeholder="Ton nom ou pseudo" required>
+                <input type="text" name="titre" placeholder="Titre de l'histoire" required>
+                <select name="type" required>
+                    <option value="">Type d'histoire</option>
+                    <option value="Idiote">Idiote</option>
+                    <option value="Malchance">Malchance</option>
+                    <option value="Technique">Fail technique</option>
+                    <option value="Erreur humaine">Erreur humaine</option>
+                </select>
+                <textarea name="texte" rows="6" placeholder="Raconte ton histoire ici..." required></textarea>
+                <button type="submit">Envoyer l'histoire</button>
+            </form>
+            <div id="confirmation">Merci ! Ton histoire a été envoyée (mais pas encore publiée 😄).</div>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos">
+        <h2>ℹ️ À propos du site</h2>
+        <p>AutoDébâcle est un projet passionné pour tous ceux qui aiment le sport auto... et surtout les moments où rien ne se passe comme prévu. Ce site regroupe les bourdes, galères et malchances qui font l'histoire (parfois tragique, souvent hilarante) de la compétition automobile.</p>
+    </section>
 </div>
 
 <footer>
     © 2025 AutoDébâcle. Raconter la poisse, c'est du sport.
 </footer>
+
+<script>
+    // Gestion simple de l'envoi du formulaire
+    document.getElementById('contributionForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('contributionForm').reset();
+        document.getElementById('confirmation').style.display = 'block';
+    });
+</script>
 
 </body>
 </html>
