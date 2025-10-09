@@ -3,117 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation Professionnelle - Mon Nom</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>AutoDébâcle - Les Fails du Sport Auto</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #c62828;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+        }
+        nav {
+            background-color: #b71c1c;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .story {
+            background-color: #222;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #f44336;
+        }
+        .story h2 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-    <!-- En-tête de la page -->
-    <header>
-        <div class="container">
-            <nav>
-                <h1><a href="#accueil">Mon Nom</a></h1>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#a-propos">À propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Section Accueil -->
-    <section id="accueil" class="hero">
-        <div class="container">
-            <h2>Bienvenue sur mon site professionnel</h2>
-            <p>Spécialiste en développement web et stratégie numérique</p>
-            <a href="#contact" class="cta-btn">Contactez-moi</a>
-        </div>
-    </section>
+<header>
+    <h1>AutoDébâcle</h1>
+    <p>Les histoires les plus idiotes et les pannes les plus injustes du sport automobile</p>
+</header>
 
-    <!-- Section À propos -->
-    <section id="a-propos">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <p>Je suis un développeur web avec plus de 5 ans d'expérience dans la création de sites web modernes, dynamiques et responsives. Mon expertise couvre diverses technologies comme HTML, CSS, JavaScript, et PHP, ainsi que des CMS populaires comme WordPress et Shopify.</p>
-        </div>
-    </section>
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#">Histoires</a>
+    <a href="#">Top Fails</a>
+    <a href="#">Contribuer</a>
+    <a href="#">À propos</a>
+</nav>
 
-    <!-- Section Services -->
-    <section id="services">
-        <div class="container">
-            <h2>Mes Services</h2>
-            <div class="service">
-                <h3>Développement Web</h3>
-                <p>Création de sites web sur mesure avec une attention particulière à l'UX/UI et la performance.</p>
-            </div>
-            <div class="service">
-                <h3>SEO & Marketing</h3>
-                <p>Optimisation pour les moteurs de recherche pour améliorer la visibilité de votre site web.</p>
-            </div>
-            <div class="service">
-                <h3>Consultation Stratégique</h3>
-                <p>Conseil pour le développement de stratégies numériques efficaces et rentables.</p>
-            </div>
-        </div>
-    </section>
+<div class="container">
+    <h2>💥 Histoire du moment :</h2>
+    <div class="story">
+        <h2>Quand une voiture de sécurité cause un accident…</h2>
+        <p>Lors du Grand Prix du Japon 2022, Pierre Gasly passe à pleine vitesse... à quelques mètres d'un tracteur de dépannage sur la piste sous la pluie. Une situation absurde et extrêmement dangereuse, qui rappelle tristement l'accident fatal de Jules Bianchi en 2014.</p>
+    </div>
 
-    <!-- Section Portfolio -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Mon Portfolio</h2>
-            <p>Voici quelques-uns de mes projets récents :</p>
-            <div class="portfolio-items">
-                <div class="portfolio-item">
-                    <img src="projet1.jpg" alt="Projet 1">
-                    <h3>Projet 1</h3>
-                    <p>Site e-commerce créé avec Shopify.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="projet2.jpg" alt="Projet 2">
-                    <h3>Projet 2</h3>
-                    <p>Développement d'une application web responsive.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="projet3.jpg" alt="Projet 3">
-                    <h3>Projet 3</h3>
-                    <p>Optimisation du référencement d'un site existant.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="story">
+        <h2>La roue mal serrée qui coûte une victoire</h2>
+        <p>En 2021, Valtteri Bottas est victime d’un arrêt au stand de plus de 43 heures. Oui, tu as bien lu. Une roue avant gauche refusait de se dévisser après la course, et il a fallu la découper. Mercedes a tout simplement abandonné la course. 🤯</p>
+    </div>
+</div>
 
-    <!-- Section Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contactez-moi</h2>
-            <form action="mailto:contact@exemple.com" method="post" enctype="text/plain">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit" class="cta-btn">Envoyer</button>
-            </form>
-        </div>
-    </section>
+<footer>
+    © 2025 AutoDébâcle. Raconter la poisse, c'est du sport.
+</footer>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Mon Nom. Tous droits réservés.</p>
-            <ul class="social-links">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-        </div>
-    </footer>
 </body>
 </html>
