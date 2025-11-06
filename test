@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoDébâcle - Les Fails du Sport Auto</title>
+
     <style>
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth; /* défilement fluide */
         }
 
         body {
@@ -47,10 +48,18 @@
             cursor: pointer;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             padding: 20px;
             max-width: 900px;
             margin: auto;
+        }
+
+        section {
+            margin-bottom: 80px;
         }
 
         .story {
@@ -69,10 +78,6 @@
             padding: 20px;
             background-color: #333;
             color: #aaa;
-        }
-
-        section {
-            margin-bottom: 60px;
         }
 
         /* Formulaire */
@@ -112,13 +117,13 @@
         }
     </style>
 </head>
-<body>
 
+<body>
 <header>
-    <h1>AutoDébâcle</h1>
-    <p>Les histoires les plus idiotes et les pannes les plus injustes du sport automobile</p>
+    <h1>AutoDébâcle - Les Fails du Sport Auto</h1>
 </header>
 
+<!-- Menu de navigation -->
 <nav>
     <a href="#accueil">Accueil</a>
     <a href="#histoires">Histoires</a>
@@ -127,13 +132,16 @@
     <a href="#apropos">À propos</a>
 </nav>
 
+<!-- Contenu principal -->
 <div class="container">
+
     <!-- ACCUEIL -->
     <section id="accueil">
-        <h2>💥 Histoire du moment :</h2>
+        <h2> AutoDébacle  :</h2>
         <div class="story">
-            <h2>Quand une voiture de sécurité cause un accident…</h2>
-            <p>Lors du Grand Prix du Japon 2022, Pierre Gasly passe à pleine vitesse... à quelques mètres d'un tracteur de dépannage sur la piste sous la pluie. Une situation absurde et extrêmement dangereuse, qui rappelle tristement l'accident fatal de Jules Bianchi en 2014.</p>
+            <h2>Qui sommes nous ?</h2>
+            <p>Nous sommes passionné de sport automobile et surtout des histoire suprenante, drôle et insolite ! ici vous retrouverez donc des histoires du même style !
+          </p>
         </div>
     </section>
 
@@ -142,7 +150,15 @@
         <h2>🧨 Autres histoires incroyables :</h2>
         <div class="story">
             <h2>La roue mal serrée qui coûte une victoire</h2>
-            <p>En 2021, Valtteri Bottas est victime d’un arrêt au stand de plus de 43 heures. Oui, tu as bien lu. Une roue avant gauche refusait de se dévisser après la course, et il a fallu la découper. Mercedes a tout simplement abandonné la course. 🤯</p>
+            <p>En 2021, Valtteri Bottas est victime d’un arrêt au stand de plus de 43 heures.
+                Une roue avant gauche refusait de se dévisser après la course, et il a fallu la découper. 🤯</p>
+        </div>
+       <h2>💥 Histoire du moment :</h2>
+        <div class="story">
+            <h2>Quand une voiture de sécurité cause un accident…</h2>
+            <p>Lors du Grand Prix du Japon 2022, Pierre Gasly passe à pleine vitesse...
+                à quelques mètres d'un tracteur de dépannage sur la piste sous la pluie.
+                Une situation absurde et dangereuse, qui rappelle tristement l'accident fatal de Jules Bianchi.</p>
         </div>
     </section>
 
@@ -152,7 +168,7 @@
         <ul>
             <li>🔧 Maldonado qui plante sa voiture… en quittant les stands</li>
             <li>🌧️ Hamilton qui entre au stand sans que son équipe soit prête</li>
-            <li>🔥 Voiture qui prend feu à l’arrivée… alors qu’elle était en tête</li>
+            <li>🔥 Une voiture qui prend feu à l’arrivée alors qu’elle était en tête</li>
             <li>⚙️ Freins montés à l’envers chez Haas (2018)</li>
         </ul>
     </section>
@@ -181,22 +197,26 @@
     <!-- À PROPOS -->
     <section id="apropos">
         <h2>ℹ️ À propos du site</h2>
-        <p>AutoDébâcle est un projet passionné pour tous ceux qui aiment le sport auto... et surtout les moments où rien ne se passe comme prévu. Ce site regroupe les bourdes, galères et malchances qui font l'histoire (parfois tragique, souvent hilarante) de la compétition automobile.</p>
+        <p>
+            AutoDébâcle est un projet passionné pour tous ceux qui aiment le sport auto... et surtout
+            les moments où rien ne se passe comme prévu. Ce site regroupe les bourdes, galères et
+            malchances qui font l'histoire (parfois tragique, souvent hilarante) de la compétition automobile.
+        </p>
     </section>
 </div>
 
+<!-- Pied de page -->
 <footer>
     © 2025 AutoDébâcle. Raconter la poisse, c'est du sport.
 </footer>
 
+<!-- Script pour gérer le formulaire -->
 <script>
-    // Gestion simple de l'envoi du formulaire
     document.getElementById('contributionForm').addEventListener('submit', function(e) {
         e.preventDefault();
         document.getElementById('contributionForm').reset();
         document.getElementById('confirmation').style.display = 'block';
     });
 </script>
-
 </body>
 </html>
