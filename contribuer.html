@@ -137,14 +137,26 @@
     <a href="apropos.html">Apropos</a>
 </nav>
 
-<section>
-    <h1>Contribuer</h1>
-    <form>
-        <input type="text" placeholder="Nom">
-        <textarea placeholder="Ton histoire…"></textarea>
-        <button>Envoyer</button>
-    </form>
-</section>
+   <section id="contribuer">
+        <h2>📝 Contribue avec ton histoire !</h2>
+        <div id="form-contribution">
+            <form id="contributionForm">
+                <input type="text" name="nom" placeholder="Ton nom ou pseudo" required>
+                <input type="text" name="titre" placeholder="Titre de l'histoire" required>
+                <select name="type" required>
+                    <option value="">Type d'histoire</option>
+                    <option value="Idiote">Idiote</option>
+                    <option value="Malchance">Malchance</option>
+                    <option value="Technique">Fail technique</option>
+                    <option value="Erreur humaine">Erreur humaine</option>
+                </select>
+                <textarea name="texte" rows="6" placeholder="Raconte ton histoire ici..." required></textarea>
+                <button type="submit">Envoyer l'histoire</button>
+            </form>
+            <div id="confirmation">Merci ! Ton histoire a été envoyée (mais pas encore publiée 😄).</div>
+        </div>
+    </section>
+
 
 </body>
 </html>
