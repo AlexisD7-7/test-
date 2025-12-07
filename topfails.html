@@ -1,5 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDébâcle - Les Fails du Sport Auto</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth; /* défilement fluide */
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #111;
+            color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c62828;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: white;
+        }
+
+        nav {
+            background-color: #b71c1c;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        .story {
+            background-color: #222;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #f44336;
+        }
+
+        .story h2 {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #aaa;
+        }
+
+        /* Formulaire */
+        #form-contribution {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border: 1px solid #444;
+        }
+
+        #form-contribution input,
+        #form-contribution select,
+        #form-contribution textarea,
+        #form-contribution button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: #eee;
+            border: 1px solid #555;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        #form-contribution button {
+            background-color: #c62828;
+            cursor: pointer;
+            border: none;
+        }
+
+        #confirmation {
+            display: none;
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 5px solid #66bb6a;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>AutoDébâcle - Les Fails du Sport Auto</h1>
+</header>
 <head>
 <meta charset="UTF-8">
 <title>Topfails - AutoDébâcle</title>
