@@ -161,7 +161,13 @@
 <footer>
     © 2025 AutoDébâcle. Raconter la poisse, c'est du sport.
 </footer>
-
+<script>
+    document.getElementById('contributionForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('contributionForm').reset();
+        document.getElementById('confirmation').style.display = 'block';
+    });
+</script>
 
 </body>
 </html>
