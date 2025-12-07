@@ -8,7 +8,7 @@
 
     <style>
         html {
-            scroll-behavior: smooth; /* défilement fluide */
+            scroll-behavior: smooth;
         }
 
         body {
@@ -35,8 +35,8 @@
             background-color: #b71c1c;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            padding: 10px;
+            gap: 30px;
+            padding: 15px;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -46,11 +46,14 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
+            font-size: 1.1em;
+            padding: 10px 18px;
+            background-color: #a31515;
+            border-radius: 6px;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            background-color: #8e0f0f;
         }
 
         .container {
@@ -65,8 +68,8 @@
 
         .story {
             background-color: #222;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
             border-left: 5px solid #f44336;
         }
 
@@ -81,7 +84,6 @@
             color: #aaa;
         }
 
-        /* Formulaire */
         #form-contribution {
             background-color: #1e1e1e;
             padding: 20px;
@@ -124,59 +126,110 @@
     <h1>AutoDébâcle - Les Fails du Sport Auto</h1>
 </header>
 
-<!-- Menu de navigation -->
+<!-- Menu de navigation : maintenant chaque onglet mène vers une page externe -->
 <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#histoires">Histoires</a>
-    <a href="#topfails">Top Fails</a>
-    <a href="#contribuer">Contribuer</a>
-    <a href="#apropos">À propos</a>
+    <a href="https://google.com" target="_blank">Accueil</a>
+    <a href="https://fr.wikipedia.org/wiki/Sport_automobile" target="_blank">Histoires</a>
+    <a href="https://www.youtube.com/results?search_query=crash+fails+f1" target="_blank">Top Fails</a>
+    <a href="https://docs.google.com/forms" target="_blank">Contribuer</a>
+    <a href="https://instagram.com" target="_blank">À propos</a>
 </nav>
 
-<!-- Contenu principal -->
+<!-- CONTENU PRINCIPAL -->
 <div class="container">
 
     <!-- ACCUEIL -->
     <section id="accueil">
-        <h2> AutoDébacle  :</h2>
+        <h2>Bienvenue sur AutoDébâcle</h2>
+
         <div class="story">
-            <h2>Qui sommes nous ?</h2>
-            <p>Nous sommes passionné de sport automobile et surtout des histoire suprenante, drôle et insolite ! ici vous retrouverez donc des histoires du même style !
-          </p>
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                AutoDébâcle est un projet créé par des passionnés de sport automobile.
+                Notre mission : rassembler les bourdes les plus mémorables de l'histoire du sport auto —
+                des erreurs humaines les plus improbables aux catastrophes mécaniques
+                qui ont changé le cours d’une course.
+            </p>
+            <p>
+                Sur ce site, tu trouveras des histoires insolites, hilarantes, parfois dramatiques,
+                mais toujours authentiques.
+            </p>
+            <p>
+                Si tu veux plonger dans le monde fascinant des ratés du sport automobile,
+                tu es au bon endroit.
+            </p>
         </div>
     </section>
 
     <!-- HISTOIRES -->
     <section id="histoires">
-        <h2>🧨 Autres histoires incroyables :</h2>
+        <h2>🧨 Histoires incroyables</h2>
+
         <div class="story">
             <h2>La roue mal serrée qui coûte une victoire</h2>
-            <p>En 2021, Valtteri Bottas est victime d’un arrêt au stand de plus de 43 heures.
-                Une roue avant gauche refusait de se dévisser après la course, et il a fallu la découper. 🤯</p>
+            <p>
+                Lors du GP de Monaco 2021, Valtteri Bottas voit son arrêt au stand se transformer
+                en cauchemar mécanique : la roue avant gauche est tellement bloquée
+                qu’elle devra être découpée… 43 heures plus tard !
+            </p>
+            <p>
+                Une erreur qui restera dans les annales de la F1 moderne.
+            </p>
         </div>
-       <h2>💥 Histoire du moment :</h2>
+
         <div class="story">
-            <h2>Quand une voiture de sécurité cause un accident…</h2>
-            <p>Lors du Grand Prix du Japon 2022, Pierre Gasly passe à pleine vitesse...
-                à quelques mètres d'un tracteur de dépannage sur la piste sous la pluie.
-                Une situation absurde et dangereuse, qui rappelle tristement l'accident fatal de Jules Bianchi.</p>
+            <h2>La voiture de sécurité qui provoque… un accident</h2>
+            <p>
+                Au GP du Japon 2022, Pierre Gasly frôle un tracteur de dépannage
+                en pleine tempête de pluie. Une scène surréaliste qui a provoqué
+                un énorme scandale dans le milieu du sport auto.
+            </p>
+            <p>
+                Une tragique répétition du drame qui a coûté la vie à Jules Bianchi.
+            </p>
+        </div>
+
+        <div class="story">
+            <h2>Le pilote qui oublie qu'il doit tourner</h2>
+            <p>
+                Lors d'une course de GT, un pilote célèbre oublie littéralement de tourner
+                dans le premier virage… et file tout droit dans un mur.
+            </p>
+            <p>
+                Une erreur qui fera le tour du monde pour son absurdité.
+            </p>
         </div>
     </section>
 
     <!-- TOP FAILS -->
     <section id="topfails">
         <h2>🏁 Top Fails du Sport Auto</h2>
+
         <ul>
-            <li>🔧 Maldonado qui plante sa voiture… en quittant les stands</li>
-            <li>🌧️ Hamilton qui entre au stand sans que son équipe soit prête</li>
-            <li>🔥 Une voiture qui prend feu à l’arrivée alors qu’elle était en tête</li>
-            <li>⚙️ Freins montés à l’envers chez Haas (2018)</li>
+            <li>🔧 Maldonado qui détruit sa voiture… en quittant les stands.</li>
+            <li>🌧️ Hamilton entre aux stands alors que son équipe… n’est pas prête.</li>
+            <li>🔥 Une voiture prend feu alors qu'elle était en tête.</li>
+            <li>⚙️ Haas installe des freins… à l’envers (2018).</li>
+            <li>🛠️ Ferrari se trompe de pneus dans un arrêt crucial.</li>
+            <li>🚗 Un pilote part pour 2 tours… sans carburant.</li>
         </ul>
     </section>
 
     <!-- CONTRIBUER -->
     <section id="contribuer">
-        <h2>📝 Contribue avec ton histoire !</h2>
+        <h2>📝 Contribuer</h2>
+
+        <div class="story">
+            <p>
+                Tu as été témoin d'un fail automobile incroyable ?  
+                Tu connais une anecdote croustillante ?  
+                Partage-la avec nous !
+            </p>
+            <p>
+                Chaque contribution est lue, validée, puis publiée dans une section dédiée.
+            </p>
+        </div>
+
         <div id="form-contribution">
             <form id="contributionForm">
                 <input type="text" name="nom" placeholder="Ton nom ou pseudo" required>
@@ -189,29 +242,31 @@
                     <option value="Erreur humaine">Erreur humaine</option>
                 </select>
                 <textarea name="texte" rows="6" placeholder="Raconte ton histoire ici..." required></textarea>
-                <button type="submit">Envoyer l'histoire</button>
+                <button type="submit">Envoyer</button>
             </form>
-            <div id="confirmation">Merci ! Ton histoire a été envoyée (mais pas encore publiée 😄).</div>
+
+            <div id="confirmation">
+                Merci ! Ton histoire a bien été envoyée.
+            </div>
         </div>
     </section>
 
-    <!-- À PROPOS -->
+    <!-- A PROPOS -->
     <section id="apropos">
-        <h2>ℹ️ À propos du site</h2>
+        <h2>ℹ️ À propos</h2>
+
         <p>
-            AutoDébâcle est un projet passionné pour tous ceux qui aiment le sport auto... et surtout
-            les moments où rien ne se passe comme prévu. Ce site regroupe les bourdes, galères et
-            malchances qui font l'histoire (parfois tragique, souvent hilarante) de la compétition automobile.
+            AutoDébâcle est un site dédié aux moments les plus improbables du sport auto.
+            Créé par des passionnés, il met en lumière les erreurs qui font rire,
+            qui font réfléchir, mais qui font surtout partie de la légende.
         </p>
     </section>
 </div>
 
-<!-- Pied de page -->
 <footer>
-    © 2025 AutoDébâcle. Raconter la poisse, c'est du sport.
+    © 2025 AutoDébâcle — Les fails qui marquent l’histoire.
 </footer>
 
-<!-- Script pour gérer le formulaire -->
 <script>
     document.getElementById('contributionForm').addEventListener('submit', function(e) {
         e.preventDefault();
@@ -219,5 +274,6 @@
         document.getElementById('confirmation').style.display = 'block';
     });
 </script>
+
 </body>
 </html>
